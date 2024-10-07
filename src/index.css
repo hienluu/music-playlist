@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-900 bg-gray-100;
+  }
+}
+
+@layer components {
+  input[type="range"] {
+    @apply appearance-none bg-gray-200 h-2 rounded-lg;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    @apply appearance-none w-6 h-6 bg-indigo-600 rounded-full cursor-pointer;
+  }
+  input[type="range"]::-moz-range-thumb {
+    @apply w-6 h-6 bg-indigo-600 rounded-full cursor-pointer border-none;
+  }
+}
